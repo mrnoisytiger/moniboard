@@ -9,7 +9,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  border: 1px solid pink !important;
+  border-right: 1px solid #676a6e;
   padding-left: 15px;
   padding-right: 15px;
 }
