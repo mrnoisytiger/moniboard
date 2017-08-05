@@ -1,0 +1,52 @@
+$hover-color: #676a6e;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    // Dimensioning
+    height: 100%;
+    width: 220px !important;
+    // Positioning
+    position: fixed;
+    left: 0;
+    top: 0;
+    // Aesthetics
+    border: 1px solid pink !important;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    hr {
+        border-color: $hover-color;
+    }
+
+    #view-select {
+        ul {
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            li {
+                // Dimensioning
+                height: 40px;
+                width: 100%;
+                //Aesthetics
+                font-size: 1.2em;
+                padding: 5px 5px 5px 15px;
+                text-decoration: none;
+                list-style: none;
+                //Transitions
+                transition: background-color 1s;
+                -webkit-transition: background-color 0.5s;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }   
+        }
+    }
+
+}
