@@ -11,6 +11,11 @@
         "username" => $config['db_user'],
         "password" => $config['db_pass'],
     ));
-    var_dump($db);
+    $collection = $db->moniboard;
+    
+    // Find all view records
+    $result = $collection->find( {"view-id": {'$exists': true}});
+
+    echo json_encode($result);
 
 ?>
