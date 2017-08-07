@@ -1,5 +1,6 @@
 <?php
 
-    return "Hi";
     echo "Hi";
+    return "Hi";
+    
 ?>
