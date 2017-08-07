@@ -13,7 +13,10 @@ $(document).ready(function() {
                 console.log(data);
                 var section_info = JSON.parse(data);
 
-                insertSection(section_info[0], 1);
+                NETDATA.pause(function() {
+                    insertSection(section_info[0], 1);
+                    NETDATA.unpause();
+                })
 
             }
         });
