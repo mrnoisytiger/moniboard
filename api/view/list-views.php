@@ -16,7 +16,7 @@
     
     // Find all view records
     $result = $collection->find(array(
-        "view-id" => array('$exists'=> true),
+        "view-id" => array('$exists'=> true)
     ));
 
     echo json_encode($result);
