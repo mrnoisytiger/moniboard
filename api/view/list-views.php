@@ -21,7 +21,9 @@
 
     $result = $collection->find();
     
-    var_dump($result);
+    foreach ($result as $entry) {
+        echo $entry['_id'], ': ', $entry['view_id'], "\n";
+    }
     //echo json_encode($result);
 
 ?>
