@@ -49,4 +49,16 @@ body {
         }
     }
 
+    #add-view-button {
+        // Positioning
+        position: fixed;
+        bottom: 15px;
+        left: 0px;
+
+        i {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
 }

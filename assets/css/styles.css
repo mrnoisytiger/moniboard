@@ -39,3 +39,14 @@ body {
 #sidebar #view-select ul li:hover {
   background-color: #676a6e;
 }
+
+#sidebar #add-view-button {
+  position: fixed;
+  bottom: 15px;
+  left: 0px;
+}
+
+#sidebar #add-view-button i {
+  text-align: center;
+  font-size: 18px;
+}
