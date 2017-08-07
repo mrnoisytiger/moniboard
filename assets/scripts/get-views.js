@@ -9,11 +9,8 @@ $(document).ready(function() {
             format: 'json'
         },
         success: function(result) {
-            views = result;        
+            alert(result);    
         },
-        type: 'GET',
+        type: 'GET', 
     }); 
-
-    console.log(views);
-
-}) 
+});
