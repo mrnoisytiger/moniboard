@@ -23,7 +23,7 @@
     ));
 
     foreach ($view_result['sections'] as $section_id) {
-        $section_result = $collection->findOne(array(
+        $section_result += $collection->findOne(array(
             "section-id" => $section_id,
             "section-name" => array('$exists'=> true)
         ));
