@@ -22,7 +22,7 @@
     $result = $collection->find();
     
     foreach ($result as $doc) {
-        var_dump($doc);
+        echo $doc['view-id'] . "\n";
     }
     //echo json_encode($result);
 
