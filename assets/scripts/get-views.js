@@ -5,11 +5,11 @@ var api_loc = "api";
 $(document).ready(function() {
     
     var $views;
-    $.ajax({url: $api_loc/list-views.php}, success: function(result) {
+    $.ajax({url: $api_loc/list-views.php, success: function(result) {
 
         $views = result;        
 
-    });
+    }});
 
     console.log($views);
 
