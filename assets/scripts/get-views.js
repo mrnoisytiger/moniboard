@@ -16,10 +16,6 @@ $(document).ready(function() {
                 var append_string = "<li data-view-id=\"" + data[element]['view-id'] + "\">" + data[element]['view-name'] + "</li>";
                 $('#view-select-list').append(append_string);
             }
-
-            $("#view-select-list li").click(function() {
-                console.log($(this).data("view-id"));
-            });
         },
         type: 'GET', 
     }); 
