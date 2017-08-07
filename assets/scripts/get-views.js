@@ -10,7 +10,7 @@ $(document).ready(function() {
             format: 'json'
         },
         success: function(result) {
-            console.log(result);
+            console.log(result.length);
         },
         type: 'GET', 
     }); 
