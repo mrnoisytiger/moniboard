@@ -18,9 +18,14 @@
     $collection = $db->dev->moniboard;
 
     // Find the matching document with the same View ID as the one clicked
-    $result = $collection->findOne(array(
+    $view_result = $collection->findOne(array(
         "view-id" => $view_id
     ));
 
-    echo json_encode($result);
+    $section_result = $collection->findOne(array(
+        "section-id" => $view_result['view-id'];
+    ));
+
+    echo json_encode($section_result);
+    
 ?>
