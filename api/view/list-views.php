@@ -21,8 +21,8 @@
 
     $result = $collection->find();
     
-    foreach ($result as $entry => $doc) {
-        echo $entry['_id'], ': ', $doc['view_id'], "\n";
+    foreach ($result as $id => $doc) {
+        echo $id, ': ', $doc['view_id'], "\n";
     }
     //echo json_encode($result);
 
