@@ -10,8 +10,12 @@ $(document).ready(function() {
             format: 'json'
         },
         success: function(result) {
-            console.log(result.length);
+            data = JSON.stringify(result);
         },
         type: 'GET', 
     }); 
+
+    for (var element in data) {
+        console.log(element['view-name']);
+    }
 });
