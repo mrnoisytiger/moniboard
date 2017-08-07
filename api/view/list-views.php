@@ -20,10 +20,13 @@
     )); */
 
     $result = $collection->find();
+
+    $data = array();
     
     foreach ($result as $doc) {
-        echo $doc['view-id'] . "\n";
+       array_push($data, $doc);
     }
-    //echo json_encode($result);
+
+    echo json_encode($data);
 
 ?>
