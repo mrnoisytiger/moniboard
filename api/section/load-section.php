@@ -23,7 +23,8 @@
     ));
 
     $section_result = $collection->findOne(array(
-        "section-id" => $view_result['section-id']
+        "section-id" => $view_result['section-id'],
+        "section-name" => array('$exists'=> true)
     ));
 
     echo json_encode($section_result);
