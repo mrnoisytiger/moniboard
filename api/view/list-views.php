@@ -9,7 +9,7 @@
     // Connect to MongoDB
     $db = new MongoClient("mongodb://" . $config['db_host'], array(
         "username" => $config['db_user'],
-        "password" => $config['db_pass'];
+        "password" => $config['db_pass'],
     ));
     var_dump($db);
 
