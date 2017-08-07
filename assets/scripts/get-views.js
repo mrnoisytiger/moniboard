@@ -9,6 +9,6 @@ $(document).ready(function() {
 
     }});
 
-    console.log($views);
+    console.log(views);
 
 })
