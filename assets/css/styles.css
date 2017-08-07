@@ -38,6 +38,8 @@ body {
 
 #sidebar #view-select ul li:hover {
   background-color: #676a6e;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #sidebar #add-view-button {
