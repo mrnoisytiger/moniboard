@@ -22,10 +22,12 @@
         "view-id" => $view_id
     ));
 
-    $section_result = $collection->findOne(array(
-        "section-id" => $view_result['section-id'],
-        "section-name" => array('$exists'=> true)
-    ));
+    foreach ($view_result['sections'] as $section_id) {
+        $section_result = $collection->findOne(array(
+            "section-id" => $section_id,
+            "section-name" => array('$exists'=> true)
+        ));
+    }
 
     echo json_encode($section_result);
 
