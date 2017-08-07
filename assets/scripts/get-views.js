@@ -10,13 +10,12 @@ $(document).ready(function() {
             format: 'json'
         },
         success: function(result) {
-              data = result;
+            result.forEach(function(element) {
+                $list_element = "<li data-id=\"" + element['view-id'] + "\">" + element['view-name'] + "</li>";
+                $("#view-select-list").append($list_element);
+            }, this);
         },
         type: 'GET', 
     }); 
-
-    data.forEach(function(element) {
-        $list_element = "<li data-id=\"" + element['view-id'] + "\">" + element['view-name'] + "</li>";
-        $("#view-select-list").append($list_element);
-    }, this);
+  
 });
