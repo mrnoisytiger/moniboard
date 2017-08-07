@@ -5,9 +5,13 @@ $(document).ready(function() {
     var views;
     $.ajax({
         url: api_loc + "/list-views.php", 
+        data: {
+            format: 'json'
+        },
         success: function(result) {
             views = result;        
-        }
+        },
+        type: 'GET',
     }); 
 
     console.log(views);
