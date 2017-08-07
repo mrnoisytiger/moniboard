@@ -14,7 +14,9 @@
     $collection = $db->moniboard;
     
     // Find all view records
-    $result = $collection->find( {"view-id": {'$exists': true}});
+    $result = $collection->find(array(
+        "view-id" => {'$exists'=> true}
+    ));
 
     echo json_encode($result);
 
