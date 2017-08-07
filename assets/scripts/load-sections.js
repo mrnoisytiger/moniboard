@@ -27,7 +27,6 @@ $(document).ready(function() {
             <p>" + info['section-desc'] + "</p>"
 
         $("#section-container").append(section_string);
-        var block_id = "#section- " + num;
 
         for (  var graph in info['graphs'] ) {
             graph_string = "<div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
@@ -37,7 +36,7 @@ $(document).ready(function() {
             data-after=\"" + info['graphs'][graph]['after'] + "\"\
             data-before=\"" + info['graphs'][graph]['before'] + "\"></div>"
 
-            $(block_id).append(graph_string);
+            $("#section-" + num).append(graph_string);
         }
     }
 });
