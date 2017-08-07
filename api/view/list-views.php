@@ -11,7 +11,7 @@
         "username" => $config['db_user'],
         "password" => $config['db_pass'],
     ));
-    $collection = $db->moniboard;
+    $collection = $db->dev->moniboard;
     
     // Find all view records
     $result = $collection->find(array(
