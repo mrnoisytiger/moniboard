@@ -21,6 +21,7 @@
 
     $result = $collection->find();
     
-    echo json_encode($result);
+    var_dump($result);
+    //echo json_encode($result);
 
 ?>
