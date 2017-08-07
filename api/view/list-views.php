@@ -10,6 +10,7 @@
     $db = new MongoDB\Client("mongodb://" . $config['db_host'] . ":" . $config['db_port'], array(
         "username" => $config['db_user'],
         "password" => $config['db_pass'],
+        "ssl" => true,
     ));
     $collection = $db->dev->moniboard;
     
