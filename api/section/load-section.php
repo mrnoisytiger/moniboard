@@ -23,7 +23,7 @@
     ));
 
     $section_result = $collection->findOne(array(
-        "section-id" => $view_result['view-id']
+        "section-id" => $view_result['section-id']
     ));
 
     echo json_encode($section_result);
