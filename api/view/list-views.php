@@ -1,7 +1,7 @@
 <?php
 
     // Load Libraries
-    require '../vendor/autoload.php';
+    require '/api/vendor/autoload.php';
 
     // Parse configuration ini
     $config = parse_ini_file('../config.ini');
