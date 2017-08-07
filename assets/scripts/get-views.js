@@ -11,11 +11,13 @@ $(document).ready(function() {
         },
         success: function(result) {
             data = JSON.parse(result);
+            
+            for (var element in data) {
+                console.log(element['view-name']);
+            }
         },
         type: 'GET', 
     }); 
 
-    for (var element in data) {
-        console.log(element['view-name']);
-    }
+
 });
