@@ -14,7 +14,7 @@ $(document).ready(function() {
             
             for (var element in data) {
                 var append_string = "<li data-view-id=\"" + data[element]['view-id'] + "\">" + data[element]['view-name'] + "</li>";
-                $("#view--select-list").append(append-string);
+                $("#view--select-list").append(append_string);
             }
         },
         type: 'GET', 
