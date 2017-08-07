@@ -43,10 +43,12 @@ body {
 #sidebar #add-view-button {
   position: fixed;
   bottom: 15px;
-  left: 0px;
+  left: 95px;
 }
 
 #sidebar #add-view-button i {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  position: relative;
+  margin: 0 auto;
 }
