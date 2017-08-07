@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "api/section/load_section.php",
+            url: "api/section/load-section.php",
             data: "view_id=" + view_id,
             success: function(data) {
                 console.log(data);
