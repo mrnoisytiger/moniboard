@@ -39,17 +39,5 @@ $(document).ready(function() {
 
             $(block_id).append(graph_string);
         }
-
     }
-
-                <div data-netdata="system.io"
-                    data-host="http://registry.my-netdata.io"
-                    data-common-max="io"
-                    data-common-min="io"
-                    data-title="I/O on registry.my-netdata.io"
-                    data-chart-library="dygraph"
-                    data-width="49%"
-                    data-height="100%"
-                    data-after="-300"
-                    ></div>
 });
