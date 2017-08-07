@@ -15,11 +15,11 @@
     $collection = $db->dev->moniboard;
     
     // Find all view records
-/*    $result = $collection->find(array(
+    $result = $collection->find(array(
         "view-id" => array('$exists'=> true)
-    )); */
+    ));
 
-    $result = $collection->find();
+   // $result = $collection->find();
 
     $data = array();
     
