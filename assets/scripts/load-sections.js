@@ -4,11 +4,11 @@ $(document).ready(function() {
     $("#view-select-list").on('click', 'li', function() {
         var view_id = $(this).data("view-id");
         console.log(view_id);
-        
+
         $.ajax({
             type: "POST",
             url: "api/section/load_section.php",
-            data: "view_id=" + view_id;
+            data: "view_id=" + view_id,
             success: function(data) {
                 console.log(data);
             }
