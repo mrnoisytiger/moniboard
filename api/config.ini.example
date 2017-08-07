@@ -2,6 +2,7 @@
 
 ; Set up Database
 db_host = "example_host"
+db_port = "example_port"
 db_name = "example_name"
 db_collection = "example_collection"
 db_user = "example_user"

@@ -7,7 +7,7 @@
     $config = parse_ini_file('../config.ini');
 
     // Connect to MongoDB
-    $db = new MongoDB\Client("mongodb://" . $config['db_host'], array(
+    $db = new MongoDB\Client("mongodb://" . $config['db_host'] . ":" . $config['db_port'], array(
         "username" => $config['db_user'],
         "password" => $config['db_pass'],
     ));
