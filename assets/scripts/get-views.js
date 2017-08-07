@@ -13,7 +13,8 @@ $(document).ready(function() {
             data = JSON.parse(result);
             
             for (var element in data) {
-                console.log(element['view-name']);
+                var append_string = "<li data-view-id=\"" + data[element]['view-id'] + "\">" + data[element]['view-name'] + "</li>";
+                $('#view--select-list').append(append-string);
             }
         },
         type: 'GET', 
