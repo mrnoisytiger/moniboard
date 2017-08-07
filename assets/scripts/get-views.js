@@ -10,11 +10,7 @@ $(document).ready(function() {
             format: 'json'
         },
         success: function(result) {
-            for (var element in result) {
-                //list_element = "<li data-id=\"" + element['view-id'] + "\">" + element['view-name'] + "</li>";
-                //$("#view-select-list").append($list_element);
-                console.log(element);
-            }
+            console.log(result);
         },
         type: 'GET', 
     }); 
