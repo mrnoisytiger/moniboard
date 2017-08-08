@@ -5,7 +5,8 @@ body {
 
 #sidebar {
   height: 100%;
-  width: 220px !important;
+  width: 20%;
+  min-width: 120px;
   position: fixed;
   left: 0;
   top: 0;
@@ -56,7 +57,7 @@ body {
 }
 
 #section-container {
-  width: calc(100%-220px);
+  width: 80%;
   height: 100%;
   position: fixed;
   right: 0;
