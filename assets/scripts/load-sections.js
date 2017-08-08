@@ -17,7 +17,7 @@ $(document).ready(function() {
 
                     $("#section-container").empty();
                     for ( var sec in section_info ) {
-                        insertSection(info[sec], sec)
+                        insertSection(section_info[sec], sec)
                     }
                     NETDATA.unpause();
                 })
