@@ -5,7 +5,7 @@ body {
 
 #sidebar {
   height: 100%;
-  width: 15%;
+  width: 18%;
   min-width: 120px;
   position: fixed;
   left: 0;
@@ -57,7 +57,7 @@ body {
 }
 
 #section-container {
-  width: 85%;
+  width: 82%;
   height: 100%;
   position: fixed;
   right: 0;

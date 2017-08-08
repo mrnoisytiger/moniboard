@@ -37,7 +37,8 @@ $(document).ready(function() {
             data-title=\"" + info['graphs'][graph]['title'] + "\" \
             data-chart-library=\"" + info['graphs'][graph]['library'] + "\"\
             data-after=\"" + info['graphs'][graph]['after'] + "\"\
-            data-before=\"" + info['graphs'][graph]['before'] + "\"></div>"
+            data-before=\"" + info['graphs'][graph]['before'] + "\"\
+            data-height=\"100px\"></div><br>"
 
             $("#section-" + num).append(graph_string);
         }
