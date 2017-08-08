@@ -32,7 +32,8 @@ $(document).ready(function() {
         $("#section-container").append(section_string);
 
         for (  var graph in info['graphs'] ) {
-            graph_string = "<div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
+            graph_string = "<h3>" + info['graphs'][graph]['title'] + "</h3>\
+            <div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
             data-host=\"" + info['section-host'] + "\"\
             data-title=\"" + info['graphs'][graph]['title'] + "\" \
             data-chart-library=\"" + info['graphs'][graph]['library'] + "\"\
