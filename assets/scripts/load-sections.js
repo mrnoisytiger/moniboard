@@ -24,14 +24,13 @@ $(document).ready(function() {
                     NETDATA.start();
                     NETDATA.unpause();
 
-                });
-
-                $(".section-sortable").sortable({
-                    update: function() {
-                        NETDATA.start();
-                        NETDATA.unpause();
-                    },
-                    axis: 'y'
+                    $(".section-sortable").sortable({
+                        update: function() {
+                            NETDATA.start();
+                            NETDATA.unpause();
+                        },
+                        axis: 'y'
+                    });
                 });
                 
             }
