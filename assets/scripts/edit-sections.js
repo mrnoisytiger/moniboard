@@ -3,7 +3,6 @@
 $(document).ready(function() {
     edit_mode = false;
     $(document).on('click', '.section-edit-pencil', function() {
-        alert("hi");
         if ( !edit_mode ) {
             edit_mode = true;
             $(this).css("color","red");
