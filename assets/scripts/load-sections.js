@@ -62,5 +62,9 @@ $(document).ready(function() {
         graph_string += "</div>";
 
         $("#section-" + num).append(graph_string);
+
+        edit_section_string = "<i class=\"fa fa-pencil\" aria-hidden=\"true\" id=\"section-" + num + "\"></i>"
+        $("#section-" + num).append(edit_section_string);
+
     }
 });
