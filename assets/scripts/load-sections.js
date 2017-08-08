@@ -39,19 +39,19 @@ $(document).ready(function() {
         $("#section-container").append(section_string);
 
         for (  var graph in info['graphs'] ) {
-            graph_string = "<div><h3>" + info['graphs'][graph]['title'] + "</h3>\
+            graph_string = "<div class=\"section-sortable\"><div><h3>" + info['graphs'][graph]['title'] + "</h3>\
             <div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
             data-host=\"" + info['section-host'] + "\"\
             data-title=\"" + info['graphs'][graph]['title'] + "\" \
             data-chart-library=\"" + info['graphs'][graph]['library'] + "\"\
             data-after=\"" + info['graphs'][graph]['after'] + "\"\
             data-before=\"" + info['graphs'][graph]['before'] + "\"\
-            data-height=\"175px\"></div></div><br>"
+            data-height=\"175px\"></div></div></div><br>"
 
             $("#section-" + num).append(graph_string);
         }
 
-        $("#section-" + num).sortable({
+        $(".section-sortable").sortable({
             update: function() {
                 NETDATA.start();
                 NETDATA.unpause();
