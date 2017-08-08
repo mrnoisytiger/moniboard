@@ -34,12 +34,14 @@ $(document).ready(function() {
 
         section_string = "<div class=\"section-block\" id=\"section-" + num + "\"> \
             <h2>" + info['section-name'] + "</h2> \
-            <p>" + info['section-desc'] + "</p>"
+            <p>" + info['section-desc'] + "</p> \
+            <div class=\"section-sortable\">"
+
 
         $("#section-container").append(section_string);
 
         for (  var graph in info['graphs'] ) {
-            graph_string = "<div class=\"section-sortable\"><div><h3>" + info['graphs'][graph]['title'] + "</h3>\
+            graph_string = "<div><h3>" + info['graphs'][graph]['title'] + "</h3>\
             <div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
             data-host=\"" + info['section-host'] + "\"\
             data-title=\"" + info['graphs'][graph]['title'] + "\" \
