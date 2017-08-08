@@ -13,6 +13,7 @@ $(document).ready(function() {
                 },
                 axis: 'y'
             });
+            $(".section-sortable").sortable('enable');
         } else {
             edit_mode = false;
             $(this).css("color","inherit");
