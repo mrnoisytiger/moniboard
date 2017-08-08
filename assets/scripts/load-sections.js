@@ -14,7 +14,11 @@ $(document).ready(function() {
                 var section_info = JSON.parse(data);
 
                 NETDATA.pause(function() {
-                    insertSection(section_info[0], 1);
+
+                    $("#section-container").empty();
+                    for ( var sec in section_info ) {
+                        insertSection(info[sec], sec)
+                    }
                     NETDATA.unpause();
                 })
 
@@ -43,5 +47,7 @@ $(document).ready(function() {
 
             $("#section-" + num).append(graph_string);
         }
+
+
     }
 });
