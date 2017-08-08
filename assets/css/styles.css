@@ -73,3 +73,10 @@ body {
 .dygraph-title {
   display: none;
 }
+
+.section-edit-pencil {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+}
