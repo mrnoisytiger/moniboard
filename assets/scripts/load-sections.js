@@ -56,7 +56,7 @@ $(document).ready(function() {
 
         $("#section-" + num).append(graph_string);
 
-        edit_section_string = "<i class=\"fa fa-pencil section-edit-pencil\" aria-hidden=\"true\" id=\"section-" + num + "\"></i>"
+        edit_section_string = "<i class=\"fa fa-pencil section-edit-pencil\" aria-hidden=\"true\" id=\"section-" + num + "edit\"></i>"
         $("#section-" + num).append(edit_section_string);
 
     }
