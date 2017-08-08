@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     function insertSection(info, num) {
 
-        section_string = "<div class=\"section-block\" id=\"section-" + num + "\"> \
+        section_string = "<div class=\"section-block\" id=\"section-" + num + "\" data-section-id=\"" + info['section-id'] + "\">\
             <h2>" + info['section-name'] + "</h2> \
             <p>" + info['section-desc'] + "</p>"
 
