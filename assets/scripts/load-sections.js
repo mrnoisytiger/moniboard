@@ -17,11 +17,12 @@ $(document).ready(function() {
 
                     $("#section-container").empty();
                     for ( var sec in section_info ) {
-                        insertSection(section_info[sec], sec)
+                        insertSection(section_info[sec], sec);
                     }
-                    NETDATA.options.current.stop_updates_when_focus_is_lost = true;
+
                     NETDATA.start();
                     NETDATA.unpause();
+                    
                 })
 
             }
