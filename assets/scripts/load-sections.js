@@ -19,6 +19,7 @@ $(document).ready(function() {
                     for ( var sec in section_info ) {
                         insertSection(section_info[sec], sec)
                     }
+                    NETDATA.start();
                     NETDATA.unpause();
                 })
 
