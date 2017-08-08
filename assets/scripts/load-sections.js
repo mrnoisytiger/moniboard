@@ -24,7 +24,16 @@ $(document).ready(function() {
                     NETDATA.start();
                     NETDATA.unpause();
 
-                });            ;
+                });
+
+                $(".section-sortable").sortable({
+                    update: function() {
+                        NETDATA.start();
+                        NETDATA.unpause();
+                    },
+                    axis: 'y'
+                });
+                
             }
         });
 
@@ -54,14 +63,5 @@ $(document).ready(function() {
         graph_string += "</div>";
 
         $("#section-" + num).append(graph_string);
-
-        $(".section-sortable").sortable({
-            update: function() {
-                NETDATA.start();
-                NETDATA.unpause();
-            },
-            axis: 'y'
-        });
-
     }
 });
