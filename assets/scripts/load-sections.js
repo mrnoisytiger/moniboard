@@ -59,7 +59,8 @@ $(document).ready(function() {
             update: function() {
                 NETDATA.start();
                 NETDATA.unpause();
-            }
+            },
+            axis: 'y'
         });
 
     }
