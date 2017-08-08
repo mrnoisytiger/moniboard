@@ -51,7 +51,12 @@ $(document).ready(function() {
             $("#section-" + num).append(graph_string);
         }
 
-        $("#section-" + num).sortable();
+        $("#section-" + num).sortable({
+            update: function() {
+                NETDATA.start();
+                NETDATA.unpause();
+            }
+        });
 
     }
 });
