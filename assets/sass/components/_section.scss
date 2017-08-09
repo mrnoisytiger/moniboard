@@ -8,6 +8,8 @@
     padding-right: 15px;
 
     .section-block {
+        overflow-y: auto;
+
         br {
             height: 30px;
         }

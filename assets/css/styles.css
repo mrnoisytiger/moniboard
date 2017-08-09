@@ -66,6 +66,10 @@ body {
   padding-right: 15px;
 }
 
+#section-container .section-block {
+  overflow-y: auto;
+}
+
 #section-container .section-block br {
   height: 30px;
 }
