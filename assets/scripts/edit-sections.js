@@ -40,7 +40,7 @@ function setGraphOrder(selected_section) {
         url: "api/section/order-graphs.php",
         data: "graphs-order=" + graph_ids + "&section-id=" + current_section_id,
         success: function(data) {
-            
+            console.log(JSON.parse(data));
         }
     });
 

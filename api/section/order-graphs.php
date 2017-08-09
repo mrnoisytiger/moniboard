@@ -31,11 +31,13 @@
         }
     }
 
+    /*
     $collection->updateOne( array(
         "section-id" => $section_id,
         "section-name" => array('$exists' => true)
     ), array(
         '$set' => $section_result
-    ));
+    ));*/
+    echo json_encode($section_result);
 
 ?>
