@@ -17,15 +17,25 @@
     ));
     $collection = $db->dev->moniboard;
 
-    for ($i = 0; $i < count($graphs_order); $i++) {
-        $collection->updateOne( array(
-            "section-id" => $section_id,
-            "graphs.graph-id" => $graphs_order[$i]
-        ), array(
-            '$set' => array(
-                'graphs.$.order' => $i + 1,
-            ),
-        ));
+    $section_result = $collection->findOne(array(
+        "section-id" => $section_id,
+        "section-name" => array('$exists'=> true)
+    ));
+
+    for ($i = 0; $i < count($graph_order); $i++) {
+        foreach ($section_result['graphs'] as &$value) {
+            if ( $value['graph-id'] == $graphs_order[$i] ) {
+                $value['order'] = $i;
+                break;
+            }
+        }
     }
+
+    $collection->updateOne( array(
+        "section-id" => $section_id,
+        "section-name" => array('$exists' => true)
+    ), array(
+        '$set' => $section_result;
+    ));
 
 ?>
