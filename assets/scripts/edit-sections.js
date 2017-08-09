@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 function getGraphOrder(selected_section) {
-    var divs = $(selected_section).find(".section-sortable > div > .netdata-container-with-legend");
+    var graph_divs = $(selected_section).find(".section-sortable > div > .netdata-container-with-legend");
     var graph_ids = [];
     for (var i in graph_divs) {
         var found_id = graph_divs[i].getAttribute("data-graph-id");
