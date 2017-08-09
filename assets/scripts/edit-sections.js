@@ -18,18 +18,30 @@ $(document).ready(function() {
             edit_mode = false;
             $(this).css("color","inherit");
             $(this).parent().find(".section-sortable").sortable('disable');
-            getGraphOrder($(this).parent());
+            setGraphOrder($(this).parent());
         }
        
     });
 });
 
-function getGraphOrder(selected_section) {
+function setGraphOrder(selected_section) {
     var graph_divs = $(selected_section).find(".section-sortable > div > .netdata-container-with-legend");
     var graph_ids = [];
     graph_divs.each(function(i) {
         var found_id = graph_divs[i].getAttribute("data-graph-id");
         graph_ids.push(found_id);
     });
-    console.log(graph_ids);
+
+    graph_ids = JSON.stringify(graph_ids);
+    current_section_id = selected_section.getAttribute("data-section-id");
+
+    $.ajax({
+        type: "POST",
+        url: "api/section/order-graphs.php",
+        data: "graphs-order=" + graph_ids + "&section-id=" + current_section_id;
+        success: function(data) {
+            
+        }
+    });
+
 }
