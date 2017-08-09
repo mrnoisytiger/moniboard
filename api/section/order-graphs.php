@@ -1,6 +1,6 @@
 <?php
 
-    $debug_string ="";
+    //$debug_string ="";
 
     $graphs_order = json_decode($_POST['graphs-order']);
     $section_id = $_POST['section-id'];
@@ -28,17 +28,9 @@
 
     for ($i = 0; $i < count($graphs_order); $i++) {
 
-        $debug_string += $i;
-
         foreach ($section_graphs as &$value) {
             if ( $value['graph-id'] == $graphs_order[$i] ) {
-
-                $debug_string += $graphs_order[$i];
-
                 $value['order'] = $i;
-
-                $debug_string += $value['order'];
-
                 break;
             }
         }
@@ -51,7 +43,7 @@
     ), array(
         '$set' => $section_result
     ));*/
-    //echo json_encode($section_graphs);
+    echo json_encode($section_graphs);
 
-    echo json_encode($debug_string);
+    //echo json_encode($debug_string);
 ?>
