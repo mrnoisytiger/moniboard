@@ -33,13 +33,20 @@
         }
     }
 
+    $collection->remove(array(
+        "section-id" => $section_id,
+        "section-name" => array('$exists' => true)
+    ));
 
+    $collection->insert($section_result);
+
+    /*
     $collection->updateOne( array(
         "section-id" => $section_id,
         "section-name" => array('$exists' => true)
     ), array(
         '$set' => $section_result
-    ));
+    ));*/
     echo json_encode($section_graphs);
 
     //echo json_encode($debug_string);
