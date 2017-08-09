@@ -35,7 +35,7 @@
         "section-id" => $section_id,
         "section-name" => array('$exists' => true)
     ), array(
-        '$set' => $section_result;
+        '$set' => $section_result
     ));
 
 ?>
