@@ -13,14 +13,14 @@ $(document).ready(function() {
                 console.log(data);
                 var section_info = JSON.parse(data);
 
-                section_info[0]['graphs'].sort(function(a, b) {
-                    return a.order - b.orer;
-                });
-
                 NETDATA.pause(function() {
 
                     $("#section-container").empty();
                     for ( var sec in section_info ) {
+                        section_info[sec]['graphs'] = section_info[sec]['graphs'].sort(function(a, b) {
+                            return a.order - b.order;
+                        });
+
                         insertSection(section_info[sec], sec);
 
                     }
