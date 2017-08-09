@@ -20,7 +20,7 @@
     for ($i = 0; $i < count($graphs_order); $i++) {
         $collection->update( array(
             "section-id" => $section_id,
-            "graphs.graph-id" -> $graphs_order[$1]
+            "graphs.graph-id" => $graphs_order[$1]
         ), array(
             '$set' => array(
                 "graphs.$.order" => $i + 1;
