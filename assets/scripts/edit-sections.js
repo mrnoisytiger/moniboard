@@ -33,7 +33,7 @@ function setGraphOrder(selected_section) {
     });
 
     graph_ids = JSON.stringify(graph_ids);
-    current_section_id = selected_section.getAttribute("data-section-id");
+    current_section_id = selected_section[0].getAttribute("data-section-id");
 
     $.ajax({
         type: "POST",
