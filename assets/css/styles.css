@@ -59,7 +59,7 @@ body {
 #section-container {
   width: 82%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   padding-left: 15px;
