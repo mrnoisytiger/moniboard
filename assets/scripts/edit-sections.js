@@ -17,12 +17,18 @@ $(document).ready(function() {
         } else {
             edit_mode = false;
             $(this).css("color","inherit");
-            $(".section-sortable").sortable('disable');
+            $(this).parent().find(".section-sortable").sortable('disable');
+            getGraphOrder($(this).parent());
         }
        
     });
 });
 
 function getGraphOrder(selected_section) {
-    $(selected_section).$(".section-sortable div");
+    var divs = $(selected_section).find(".section-sortable > div > .netdata-container-with-legend");
+    var graph_ids = [];
+    for (var single_graph in divs) {
+        graph_ids.push(divs[single_graph].attr("graph-id"));
+    }
+    console.log(graph_ids);
 }
