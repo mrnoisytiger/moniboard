@@ -6,7 +6,7 @@ $(document).ready(function() {
         if ( !edit_mode ) {
             edit_mode = true;
             $(this).css("color","red");
-            $(".section-sortable").sortable({
+            $(this).parent().find(".section-sortable").sortable({
                 update: function() {
                     NETDATA.start();
                     NETDATA.unpause();
@@ -22,3 +22,7 @@ $(document).ready(function() {
        
     });
 });
+
+function getGraphOrder(selected_section) {
+    $(selected_section).$(".section-sortable div");
+}
