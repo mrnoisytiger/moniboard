@@ -18,7 +18,7 @@
     $collection = $db->dev->moniboard;
 
     for ($i = 0; $i < count($graphs_order); $i++) {
-        $collection->update( array(
+        $collection->updateOne( array(
             "section-id" => $section_id,
             "graphs.graph-id" => $graphs_order[$i]
         ), array(
