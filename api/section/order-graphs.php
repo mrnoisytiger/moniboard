@@ -23,7 +23,7 @@
             "graphs.graph-id" => $graphs_order[$i]
         ), array(
             '$set' => array(
-                "graphs.$.order" => $i + 1;
+                "graphs.$.order" => $i + 1,
             ),
         ));
     }
