@@ -38,7 +38,7 @@
                 $value['order'] = $i;
 
                 $debug_string += $value['order'];
-                
+
                 break;
             }
         }
@@ -51,6 +51,7 @@
     ), array(
         '$set' => $section_result
     ));*/
-    echo json_encode($section_graphs);
+    //echo json_encode($section_graphs);
 
+    echo json_encode($debug_string);
 ?>
