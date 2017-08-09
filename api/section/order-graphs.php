@@ -22,8 +22,10 @@
         "section-name" => array('$exists'=> true)
     ));
 
+    $section_graphs = $section_result['graphs'];
+
     for ($i = 0; $i < count($graph_order); $i++) {
-        foreach ($section_result['graphs'] as &$value) {
+        foreach ($section_graphs as &$value) {
             if ( $value['graph-id'] == $graphs_order[$i] ) {
                 $value['order'] = $i;
                 break;
@@ -38,6 +40,6 @@
     ), array(
         '$set' => $section_result
     ));*/
-    echo json_encode($section_result);
+    echo json_encode($section_graphs);
 
 ?>
