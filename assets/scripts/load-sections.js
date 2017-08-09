@@ -13,10 +13,10 @@ $(document).ready(function() {
                 console.log(data);
                 var section_info = JSON.parse(data);
 
-                section_info['graphs'].sort(function(a, b) {
+                section_info[0]['graphs'].sort(function(a, b) {
                     return a.order - b.orer;
                 });
-                
+
                 NETDATA.pause(function() {
 
                     $("#section-container").empty();
