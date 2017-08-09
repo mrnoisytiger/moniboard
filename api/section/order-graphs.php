@@ -26,7 +26,7 @@
 
     $section_graphs = $section_result['graphs'];
 
-    for ($i = 0; $i < count($graph_order); $i++) {
+    for ($i = 0; $i < count($graphs_order); $i++) {
 
         $debug_string += $i;
 
