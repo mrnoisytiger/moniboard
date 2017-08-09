@@ -25,7 +25,7 @@
     ));
 
     for ($i = 0; $i < count($graphs_order); $i++) {
-        foreach ($$section_result['graphs'] as &$value) {
+        foreach ($section_result['graphs'] as &$value) {
             if ( $value['graph-id'] == $graphs_order[$i] ) {
                 $value['order'] = $i;
                 break;
@@ -46,7 +46,7 @@
         "section-id" => $section_id,
         "section-name" => array('$exists' => true)
     ), array(
-        '$set' => MongoDB\BSON\fromPHP($section_result),
+        '$set' => $section_result
     ));
     echo json_encode($section_graphs);
 
