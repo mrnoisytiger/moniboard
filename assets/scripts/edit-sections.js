@@ -38,7 +38,7 @@ function setGraphOrder(selected_section) {
     $.ajax({
         type: "POST",
         url: "api/section/order-graphs.php",
-        data: "graphs-order=" + graph_ids + "&section-id=" + current_section_id;
+        data: "graphs-order=" + graph_ids + "&section-id=" + current_section_id,
         success: function(data) {
             
         }
