@@ -74,6 +74,10 @@ body {
   height: 30px;
 }
 
+#section-container .section-block .section-edit-pencil {
+  z-index: 999;
+}
+
 .dygraph-title {
   display: none;
 }
