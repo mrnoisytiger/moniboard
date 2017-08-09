@@ -54,7 +54,7 @@ $(document).ready(function() {
             data-chart-library=\"" + info['graphs'][graph]['library'] + "\"\
             data-after=\"" + info['graphs'][graph]['after'] + "\"\
             data-before=\"" + info['graphs'][graph]['before'] + "\"\
-            =data-graph-id=\"" + info['graphs'][graph]['graph-id'] + "\"\
+            data-graph-id=\"" + info['graphs'][graph]['graph-id'] + "\"\
             data-height=\"175px\"></div></div><br>";
 
         }
