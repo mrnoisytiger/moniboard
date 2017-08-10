@@ -96,9 +96,11 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
+  display: none;
 }
 
 #add-graph {
+  display: none;
   height: 400px;
   width: 500px;
   z-index: 101;
