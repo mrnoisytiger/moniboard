@@ -37,7 +37,7 @@ $(document).ready(function() {
     function insertSection(info, num) {
 
         // Insert section containing div
-        section_string = "<div class=\"section-block\" id=\"section-" + num + "\" data-section-id=\"" + info['section-id'] + "\">\
+        section_string = "<div class=\"section-block\" id=\"section-" + num + "\" data-section-id=\"" + info['section-id'] + "\" data-section-host=\"" + info['section-host'] + "\">\
             <h2>" + info['section-name'] + "</h2> \
             <p>" + info['section-desc'] + "</p>"
 
