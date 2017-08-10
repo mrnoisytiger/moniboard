@@ -1,7 +1,7 @@
 // Used to bring up the add graphs form and send to backend
 
 $(document).ready(function() {
-    $(document).on('click', '.add-graph-div', function() {
+    $(document).on('click', '.add-graph-trigger', function() {
         var active_section = $(this).parent();
 
         $.ajax({

@@ -90,8 +90,9 @@ body {
   cursor: pointer;
 }
 
-.add-graph-div {
-  width: 100 .add-graph-div;
+.add-graph-trigger {
+  display: none;
+  width: 100 .add-graph-trigger;
   height: 100px;
   border: 3px solid #878b90;
   border-radius: 15px;
@@ -99,7 +100,7 @@ body {
   cursor: pointer;
 }
 
-.add-graph-div .add-graph-plus {
+.add-graph-trigger .add-graph-plus {
   position: relative;
   top: 50%;
   left: 50%;
