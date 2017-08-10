@@ -7,10 +7,11 @@
     border-radius: 5px;
     color: #878b90 !important;
     height: 40px;
+    padding-top: 3px;
 }
 
 .select2-section__arrow {
-    top: 7px;
+    top: 7px !important;
 }
 
 .select2-search__field {
@@ -19,4 +20,5 @@
 
 .select2-selection--single {
     border: none !important;
+    height: 40px;
 }
