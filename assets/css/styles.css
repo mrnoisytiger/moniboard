@@ -174,3 +174,7 @@ body {
 #add-graph #add-graph-time-before {
   margin-left: 9%;
 }
+
+.select2-selection, .select2-search, .select2-results {
+  background-color: #363739;
+}
