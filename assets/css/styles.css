@@ -93,12 +93,14 @@ body {
 .add-graph-div {
   width: 100 .add-graph-div;
   height: 150px;
-  background-color: #332f2f;
+  border: 3px solid #878b90;
+  border-radius: 15px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
 .add-graph-div .add-graph-plus {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
