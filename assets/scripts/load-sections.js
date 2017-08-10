@@ -36,6 +36,7 @@ $(document).ready(function() {
 
     function insertSection(info, num) {
 
+        // Insert section containing div
         section_string = "<div class=\"section-block\" id=\"section-" + num + "\" data-section-id=\"" + info['section-id'] + "\">\
             <h2>" + info['section-name'] + "</h2> \
             <p>" + info['section-desc'] + "</p>"
@@ -43,8 +44,10 @@ $(document).ready(function() {
 
         $("#section-container").append(section_string);
 
+        // Prep the container div
         var graph_string = "<div class=\"section-sortable\">";
         
+        // For every graph, add the relevant div with the relevant info
         for (  var graph in info['graphs'] ) {
             graph_string += "<div><h3>" + info['graphs'][graph]['title'] + "</h3>\
             <div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
@@ -61,6 +64,7 @@ $(document).ready(function() {
 
         $("#section-" + num).append(graph_string);
 
+        // Add the edit button.
         edit_section_string = "<i class=\"fa fa-pencil section-edit-pencil\" aria-hidden=\"true\" id=\"section-" + num + "edit\"></i>"
         $("#section-" + num).append(edit_section_string);
 

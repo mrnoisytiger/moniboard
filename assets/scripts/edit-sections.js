@@ -6,6 +6,7 @@ $(document).ready(function() {
         if ( !edit_mode ) {
             edit_mode = true;
             $(this).css("color","red");
+            // Make the parent div to the edit button sortable, but only that one. Don't affect the other sections
             $(this).parent().find(".section-sortable").sortable({
                 update: function() {
                     NETDATA.start();
@@ -25,8 +26,10 @@ $(document).ready(function() {
 });
 
 function setGraphOrder(selected_section) {
+    // Get the divs for the charts
     var graph_divs = $(selected_section).find(".section-sortable > div > .netdata-container-with-legend");
     var graph_ids = [];
+    // For all the divs, put their graph id into an array in order they are in the dom.
     graph_divs.each(function(i) {
         var found_id = graph_divs[i].getAttribute("data-graph-id");
         graph_ids.push(found_id);
@@ -35,6 +38,7 @@ function setGraphOrder(selected_section) {
     graph_ids = JSON.stringify(graph_ids);
     current_section_id = selected_section[0].getAttribute("data-section-id");
 
+    // Send the graph ids with the section id to the backend to reorder in the DB.
     $.ajax({
         type: "POST",
         url: "api/section/order-graphs.php",

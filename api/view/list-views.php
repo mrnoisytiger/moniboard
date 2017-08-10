@@ -19,10 +19,9 @@
         "view-id" => array('$exists'=> true)
     ));
 
-   // $result = $collection->find();
-
     $data = array();
     
+    // Add all the views into an array and then send it off
     foreach ($result as $doc) {
        array_push($data, $doc);
     }
