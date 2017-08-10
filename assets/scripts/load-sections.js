@@ -69,7 +69,7 @@ $(document).ready(function() {
         $("#section-" + num).append(edit_section_string);
 
         // Add the add graph button
-        add_graph_string = "<div class=\"add-graph-div\"><i class=\"fa fa-plus add-graph-plus\" aria-hidden=\"false\"></i></div>"
+        add_graph_string = "<div class=\"add-graph-trigger\"><i class=\"fa fa-plus add-graph-plus\" aria-hidden=\"false\"></i></div>"
         $("#section-" + num).append(add_graph_string);
 
     }
