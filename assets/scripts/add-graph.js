@@ -9,6 +9,10 @@ $(document).ready(function() {
             url: active_section[0].getAttribute('data-section-host') + "api/v1/charts",
             success: function(data) {
                console.log(data);
+               for (var i in data) {
+                   select_option_string = "<option value=\"" + data[i]['id'] + "\">" + data[i]['title'] + "\"</option>";
+                   active_section.append(select_option_string);
+               }
             }
         });
 
