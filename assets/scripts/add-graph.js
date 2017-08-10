@@ -6,7 +6,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: active_section.getAttribute('data-section-host') + "api/v1/charts",
+            url: active_section[0].getAttribute('data-section-host') + "api/v1/charts",
             data: "view_id=" + view_id,
             success: function(data) {
                console.log(JSON.parse(data));
