@@ -6,7 +6,7 @@ $(document).ready(function() {
         if ( !edit_mode ) {
             edit_mode = true;
             $(this).css("color","red");
-            $(this).parent().find(".add-graph-trigger").fadeIn(100);
+            $(this).parent().find(".add-graph-trigger").fadeIn(200);
             // Make the parent div to the edit button sortable, but only that one. Don't affect the other sections
             $(this).parent().find(".section-sortable").sortable({
                 update: function() {
@@ -18,7 +18,7 @@ $(document).ready(function() {
             $(".section-sortable").sortable('enable');
         } else {
             edit_mode = false;
-            $(this).parent().find(".add-graph-trigger").fadeIn(100);
+            $(this).parent().find(".add-graph-trigger").fadeOut(200);
             $(this).css("color","inherit");
             $(this).parent().find(".section-sortable").sortable('disable');
             setGraphOrder($(this).parent());
