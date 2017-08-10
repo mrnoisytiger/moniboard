@@ -12,7 +12,7 @@
         "password" => $config['db_pass'],
         "ssl" => true,
     ));
-    $collection = $db->dev->moniboard;
+    $collection = $db->$config['db_name']->$config['db_collection'];
     
     // Find all view records
     $result = $collection->find(array(

@@ -15,7 +15,7 @@
         "password" => $config['db_pass'],
         "ssl" => true,
     ));
-    $collection = $db->dev->moniboard;
+    $collection = $db->$config['db_name']->$config['db_collection'];
 
     $section_result = $collection->findOne(array(
         "section-id" => $section_id,

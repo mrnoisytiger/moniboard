@@ -15,7 +15,7 @@
         "password" => $config['db_pass'],
         "ssl" => true,
     ));
-    $collection = $db->dev->moniboard;
+    $collection = $db->$config['db_name']->$config['db_collection'];
 
     // Find the matching document with the same View ID as the one clicked
     $view_result = $collection->findOne(array(
