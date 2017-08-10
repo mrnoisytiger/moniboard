@@ -15,6 +15,7 @@ $(document).ready(function() {
                     $("#add-graph-metric").append(select_option_string);
                 }
                 sortSelect(document.getElementById("add-graph-metric"));
+                $(".js-example-basic-single").select2();
             }
         });
 

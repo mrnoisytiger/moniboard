@@ -20,6 +20,10 @@
         <!-- Load FontAwesome -->
         <script src="https://use.fontawesome.com/3e39e96a92.js"></script>
 
+        <!-- Load Select 2 -->
+        <script src="https://cdn.jsdelivr.net/select2/4.0.3/js/select2.min.js" integrity="sha256-+mWd/G69S4qtgPowSELIeVAv7+FuL871WXaolgXnrwQ=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/select2/4.0.3/css/select2.min.css" integrity="sha256-xJOZHfpxLR/uhh1BwYFS5fhmOAdIRQaiOul5F/b7v3s=" crossorigin="anonymous">
+
         <!-- Load Scripts -->
         <script src="assets/scripts/get-views.js"></script>
         <script src="assets/scripts/load-sections.js"></script>
@@ -102,7 +106,7 @@ s
                     <label for="add-graph-title">Graph Title</label>
                     <input id="add-graph-title" type="text" placeholder="CPU Utilization"></input>
                     <label for="add-graph-metric">Metric</label>
-                    <select id="add-graph-metric" placeholder="system.cpu">
+                    <select id="add-graph-metric" class=".js-example-basic-single" placeholder="system.cpu">
                         <option value="" disabled selected hidden>Choose Metric...</option>
                     </select>
                     <label for="add-graph-time-after">Time Scale (in seconds)</label>
