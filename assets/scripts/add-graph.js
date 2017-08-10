@@ -5,6 +5,6 @@ $(document).ready(function() {
         var active_section = $("this").parent();
 
         $("#add-overlay").show('300');
-        $("#add-graph-form").show('300');
+        $("#add-graph").show('300');
     })
 })
