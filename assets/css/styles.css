@@ -175,6 +175,6 @@ body {
   margin-left: 9%;
 }
 
-.select2-selection, .select2-search, .select2-results {
+.select2-selection, .select2-search, .select2-search input, .select2-results {
   background-color: #363739;
 }
