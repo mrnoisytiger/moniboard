@@ -10,7 +10,7 @@ $(document).ready(function() {
             success: function(data) {
                console.log(data);
                for (var i in data['charts']) {
-                   select_option_string = "<option value=\"" + data['charts'][i]['id'] + "\">" + data['charts'][i]['title'] + "\"</option>";
+                   select_option_string = "<option value=\"" + data['charts'][i]['id'] + "\">" + data['charts'][i]['title'] + "</option>";
                    active_section.append(select_option_string);
                }
             }
