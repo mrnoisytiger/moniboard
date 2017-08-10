@@ -35,12 +35,12 @@ $(document).ready(function() {
         var add_graph_data = {};
         add_graph_data['section-id'] = active_section[0].getAttribute('data-section-id');
         add_graph_data['title'] = $("#add-graph-title").val();
-        add_graph_data['metirc'] = $("#add-graph-matric").val();
-        add_graph_data['after'] = $("#add-graph-time-after").val();
-        add_graph_data['before'] = $("#add-graph-time-before").val();
+        add_graph_data['metric'] = $("#add-graph-metric").val();
+        add_graph_data['after'] = parseInt($("#add-graph-time-after").val());
+        add_graph_data['before'] = parseInt($("#add-graph-time-before").val());
 
         console.log(add_graph_data);
-        
+
         $.ajax({
             type: "POST",
             url: "api/section/add_graph.php",
