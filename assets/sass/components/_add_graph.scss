@@ -1,0 +1,66 @@
+#add-overlay {
+    z-index:100;
+    background-color: rgba(0,9,0,0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+}
+
+#add-graph {
+    display: none;
+    height: 400px;
+    width: 500px;
+    z-index: 101;
+    background-color: #363739;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    legend {
+        font-size: 18px;
+        padding: 10px 0px;
+        color: #878b90;
+        font-weight: 600;
+    }
+
+    label {
+        display: block;
+        padding-top: 20px;
+        font-size: 15px;
+
+        &:first-of-type {
+            padding-top: 0px;
+        }
+    }
+
+    input, select {
+        width: 100%;
+        height: 40px;
+        background-color: #363739;
+        border: 3px solid #878b90;
+        border-radius: 5px;
+        color: #878b90;
+        padding: 5px;
+    }
+
+    #add-graph-submit {
+        width: 100px;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    #add-graph-time-after, #add-graph-time-before {
+        width: 45%;
+        display: inline-block;
+    }
+    
+    #add-graph-time-before {
+        margin-left: 9%;
+    }
+}
