@@ -10,7 +10,6 @@ $(document).ready(function() {
             url: "api/section/load-section.php",
             data: "view_id=" + view_id,
             success: function(data) {
-                console.log(data);
                 var section_info = JSON.parse(data);
 
                 NETDATA.pause(function() {
