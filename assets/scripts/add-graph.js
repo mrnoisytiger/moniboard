@@ -49,6 +49,9 @@ $(document).ready(function() {
             url: "api/section/add-graph.php",
             data: "formdata=" + JSON.stringify(add_graph_data),
             success: function(data) {
+                // Hide overlay and add graph form
+                $("#add-overlay").fadeOut('200');
+                $("#add-graph").fadeOut('200');
             }
         });
     });
