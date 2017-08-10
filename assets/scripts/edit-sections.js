@@ -43,5 +43,4 @@ function setGraphOrder(selected_section) {
             console.log(JSON.parse(data));
         }
     });
-
 }
