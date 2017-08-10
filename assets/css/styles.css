@@ -90,6 +90,21 @@ body {
   cursor: pointer;
 }
 
+.add-graph-div {
+  width: 100 .add-graph-div;
+  height: 150px;
+  background-color: #332f2f;
+  cursor: pointer;
+}
+
+.add-graph-div .add-graph-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+
 #add-overlay {
   z-index: 100;
   background-color: rgba(0, 9, 0, 0.6);

@@ -65,8 +65,12 @@ $(document).ready(function() {
         $("#section-" + num).append(graph_string);
 
         // Add the edit button.
-        edit_section_string = "<i class=\"fa fa-pencil section-edit-pencil\" aria-hidden=\"true\" id=\"section-" + num + "edit\"></i>"
+        edit_section_string = "<i class=\"fa fa-pencil section-edit-pencil\" aria-hidden=\"false\" id=\"section-" + num + "edit\"></i>"
         $("#section-" + num).append(edit_section_string);
+
+        // Add the add graph button
+        add_button_string = "<div class=\"add-graph-div\"><i class=\"fa fa-plus add-graph-plus\" aria-hidden=\"false\"></i></div>"
+        $("#section-" + num).append(add_graph_string);
 
     }
 });
