@@ -9,8 +9,8 @@ $(document).ready(function() {
             url: active_section[0].getAttribute('data-section-host') + "api/v1/charts",
             success: function(data) {
                 console.log(data);
+                $("#add-graph-metric").empty();
                 for (var i in data['charts']) {
-                    $("#add-graph-metric").empty();
                     select_option_string = "<option value=\"" + data['charts'][i]['id'] + "\">" + data['charts'][i]['title'] + "</option>";
                     $("#add-graph-metric").append(select_option_string);
                 }
