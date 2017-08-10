@@ -16,7 +16,7 @@
     ));
     $collection = $db->$config['db_name']->$config['db_collection'];
 
-    $section_id = $data['section-id'];
+    $section_id = $data->"section-id";
     unset($data['section-id']);
 
     $collection->updateOne(array( 
