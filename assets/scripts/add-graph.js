@@ -8,7 +8,7 @@ $(document).ready(function() {
             type: "GET",
             url: active_section[0].getAttribute('data-section-host') + "api/v1/charts",
             success: function(data) {
-               console.log(JSON.parse(data));
+               console.log(data);
             }
         });
 
