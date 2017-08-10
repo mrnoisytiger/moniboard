@@ -10,6 +10,7 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data);
                 for (var i in data['charts']) {
+                    $("#add-graph-metric").empty();
                     select_option_string = "<option value=\"" + data['charts'][i]['id'] + "\">" + data['charts'][i]['title'] + "</option>";
                     $("#add-graph-metric").append(select_option_string);
                 }
