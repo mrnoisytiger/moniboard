@@ -4,4 +4,11 @@
 
 .select2-selection__rendered {
     border: 3px solid #878b90;
+    border-radius: 5px;
+    color: #878b90;
+    height: 40px;
+}
+
+.select2-section__arrow {
+    top: 7px;
 }
