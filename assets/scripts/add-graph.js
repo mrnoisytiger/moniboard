@@ -38,12 +38,13 @@ $(document).ready(function() {
         add_graph_data['metric'] = $("#add-graph-metric").val();
         add_graph_data['after'] = parseInt($("#add-graph-time-after").val());
         add_graph_data['before'] = parseInt($("#add-graph-time-before").val());
+        add_graph_data['order'] = active_section.find(".section-sortable > div").length;
 
         console.log(add_graph_data);
 
         $.ajax({
             type: "POST",
-            url: "api/section/add_graph.php",
+            url: "api/section/add-graph.php",
             data: "formdata=" + JSON.stringify(add_graph_data),
             success: function(data) {
                 location.reload();
