@@ -11,7 +11,7 @@ $(document).ready(function() {
                console.log(data);
                for (var i in data['charts']) {
                    select_option_string = "<option value=\"" + data['charts'][i]['id'] + "\">" + data['charts'][i]['title'] + "</option>";
-                   active_section.append(select_option_string);
+                   $("#add-graph-metric").append(select_option_string);
                }
             }
         });
