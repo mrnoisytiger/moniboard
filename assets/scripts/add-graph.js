@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     $(document).on('click', '.add-graph-div', function() {
-        var active_section = $("this").parent();
+        var active_section = $(this).parent();
 
         $.ajax({
             type: "POST",
