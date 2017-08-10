@@ -1,7 +1,7 @@
 // Used to bring up the add graphs form and send to backend
 
 $(document).ready(function() {
-    $(".add-graph-div").on('click', function() {
+    $(document).on('click', '.add-graph-div', function() {
         var active_section = $("this").parent();
 
         $("#add-overlay").show('300');
