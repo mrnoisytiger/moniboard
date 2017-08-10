@@ -5,9 +5,8 @@ $(document).ready(function() {
         var active_section = $(this).parent();
 
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: active_section[0].getAttribute('data-section-host') + "api/v1/charts",
-            data: "view_id=" + view_id,
             success: function(data) {
                console.log(JSON.parse(data));
             }
