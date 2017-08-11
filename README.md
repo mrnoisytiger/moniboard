@@ -4,8 +4,8 @@ Moniboard - A custom dashboard for NetData with user-created views and graph cho
 ## Things to-do
 1. Create an add graph feature **(In Progress)**
     - [x] Should use a popup modal and prompt for relevant information **(Completed/Working)**
-    - [ ] Once all populated, send the relevant information to the backend and update the database **(In Planning)**
-    - [ ] At the same time as previous step, load in the new graph on the fly. The DB should sync up eventually to be consistent
+    - [x] Once all populated, send the relevant information to the backend and update the database **(Completed/Working)**
+    - [ ] At the same time as previous step, load in the new graph on the fly. The DB should sync up eventually to be consistent **(Might remove/In Planning)**
         1. Don't forget to generate the graph ID and when it is received, update the DOM to have it
 2. Create an edit section feature
     - [ ] Make the title, descriptions, and headings editable. 
