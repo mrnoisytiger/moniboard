@@ -3,7 +3,6 @@
 $(document).ready(function() {
     $("#view-select-list").on('click', 'li', function() {
         var view_id = $(this).data("view-id");
-        console.log(view_id);
 
         $.ajax({
             type: "POST",
