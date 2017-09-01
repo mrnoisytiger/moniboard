@@ -49,7 +49,8 @@ $(document).ready(function() {
         
         // For every graph, add the relevant div with the relevant info
         for (  var graph in info['graphs'] ) {
-            graph_string += "<div><h3>" + info['graphs'][graph]['title'] + "</h3>\
+            graph_string += "<div class=\"single-graph\" data-graph-id=\"" + info['graphs']['graph']['graph-id'] + "\">\
+            <h3>" + info['graphs'][graph]['title'] + "</h3>\
             <div data-netdata=\"" + info['graphs'][graph]['metric-id'] + "\"\
             data-host=\"" + info['section-host'] + "\"\
             data-title=\"" + info['graphs'][graph]['title'] + "\" \
