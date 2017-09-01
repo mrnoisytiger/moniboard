@@ -47,7 +47,7 @@ $(document).ready(function() {
         // Prep the container div
         var graph_string = "<div class=\"section-sortable\">";
         
-        // For every graph, add the relevant div with the relevant info
+        // For every graph, add the relevant div with the relevant info 
         for (  var graph in info['graphs'] ) {
             graph_string += "<div class=\"single-graph\" data-graph-id=\"" + info['graphs']['graph']['graph-id'] + "\">\
             <h3>" + info['graphs'][graph]['title'] + "</h3>\
